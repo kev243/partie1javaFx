@@ -1,0 +1,23 @@
+
+
+.label{
+    -fx-font-family: "Andale Mono";
+}
+
+/*
+ * S'applique au grand titre de la page d'acceuill
+ */
+#titleLabel{
+    -fx-font-size: 17px;
+}
+
+
+/*
+ * S'applique au bouton commencer
+ */
+#commencer {
+    -fx-font-size: 15px;
+    -fx-background-color: #669966;
+    -fx-text-fill:white;
+    -fx-border-radius: 20px;
+}
