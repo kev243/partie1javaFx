@@ -6,11 +6,58 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<!--<AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.partie1javafx.Enregistrer"
             prefHeight="400.0" prefWidth="600.0">
 
     <Label  text="moi"/>
 
-</AnchorPane>
+</AnchorPane>-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.partie1javafx.Enregistrer"
+      stylesheets="@style.css" fx:id="fenetre">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+
+    <VBox  alignment="CENTER" spacing="10" >
+        <padding>
+            <Insets bottom="5.0" />
+        </padding>
+        <!-- Pour afficher l'image, on doit mettre un objet Image dans la propriété image d'un ImageView. Le ImageView
+             est responsable de gérer l'affichage de l'image. -->
+        <ImageView preserveRatio="true" fitWidth="50.0">
+            <image>
+               <!-- <Image url="@../../../img/iconeCle.png"></Image>-->
+            </image>
+        </ImageView>
+        <Text text="Veuillez vous connecter pour continuer" styleClass="titre"/>
+    </VBox>
+
+    <VBox alignment="CENTER_LEFT" spacing="10" maxWidth="300" maxHeight="300" >
+        <Label>Nom </Label>
+        <TextField ></TextField>
+
+        <Label>Mot de passe </Label>
+        <PasswordField></PasswordField>
+    </VBox>
+
+    <!--<Label>Nom :</Label>
+    <TextField ></TextField>
+
+    <Label>Mot de passe :</Label>
+    <PasswordField></PasswordField>-->
+
+    <!-- Boutons côte à côte -->
+    <HBox alignment="CENTER" spacing="10.0">
+        <Button fx:id="connexion">Se connecter</Button>
+      <!--  <Button fx:id="enregistrer"  onAction="#enregistrerButtonClick">S'enregistrer</Button>-->
+    </HBox>
+</VBox>
+
