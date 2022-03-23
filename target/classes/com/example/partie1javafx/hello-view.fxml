@@ -17,8 +17,6 @@
     </padding>
 
 
-
-
     <children>
         <Label id="titleLabel" text="Location des voitures"/>
         <Label id="spamLabel" text="Offres Spéciales . Les tarifs aussi bas que possible. Essayez les !"></Label>

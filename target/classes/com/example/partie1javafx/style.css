@@ -16,8 +16,41 @@
  * S'applique au bouton commencer
  */
 #commencer {
-    -fx-font-size: 15px;
+    -fx-font-size: 12pt;
     -fx-background-color: #669966;
     -fx-text-fill:white;
     -fx-border-radius: 20px;
+    -fx-font-width: 2pt;
+}
+
+/*
+ * S'applique à tous les objets TextField et PasswordField
+ */
+.titre {
+    -fx-font-size: 12pt;
+    /* On utilise fill ici, car Text n'est pas un enfant, mais partie intégrante de l'objet */
+    -fx-fill: #9999cc;
+    -fx-font-family: "Andale Mono";
+}
+
+TextField, PasswordField {
+    -fx-background-color: #fff;
+    -fx-text-fill: #aaaacc;
+    -fx-font-size: 10pt;
+    -fx-font-width: 2pt;
+    -fx-font-family: "Andale Mono";
+}
+
+#connexion {
+    -fx-background-color: blue;
+    -fx-text-fill:white;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Andale Mono";
+}
+
+#enregistrer {
+    -fx-background-color:#000;
+    -fx-text-fill:white;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Andale Mono";
 }

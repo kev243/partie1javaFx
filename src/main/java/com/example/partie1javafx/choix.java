@@ -1,29 +1,26 @@
 package com.example.partie1javafx;
 
+
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class HelloController {
-    @FXML
-    private Label welcomeText;
+public class choix implements Initializable {
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
-    @FXML
-    //protected void onHelloButtonClick() {
-        //welcomeText.setText("Welcome to JavaFX Application!");
-    //}
+    }
 
+    public void enregistrerButtonClick(ActionEvent event) throws IOException {
 
-    //classe pour l'ouverture d'une nouvelle fenetre
-    protected void onHelloButtonClick(ActionEvent event) throws IOException {
-
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("choix.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("enregistrer.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 800, 500);
         Stage stage =new Stage();
         stage.setTitle("Vroum!Vroum!");
@@ -31,15 +28,5 @@ public class HelloController {
         ////Le code suivant montre comment utiliser Java Modality.NONE
         stage.initModality(Modality.NONE);//default
         stage.show();
-
-
     }
-
-
-
-
-    }
-
-
-
-
+}
