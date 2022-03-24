@@ -1,4 +1,8 @@
 
+#fenetre1{
+    -fx-background-image: url("https://i.gaw.to/content/photos/38/76/387629_Bugatti.jpg");
+    -fx-background-size:cover;
+}
 
 .label{
     -fx-font-family: "Andale Mono";
@@ -8,18 +12,22 @@
  * S'applique au grand titre de la page d'acceuill
  */
 #titleLabel{
-    -fx-font-size: 17px;
+    -fx-font-size: 20px;
+    -fx-text-fill:white;
+}
+#spam{
+    -fx-text-fill:white;
 }
 
 
 /*
- * S'applique au bouton commencer
+ * S'applique au bouton commencer #669966
  */
 #commencer {
-    -fx-font-size: 12pt;
-    -fx-background-color: #669966;
+    -fx-font-size: 13pt;
+    -fx-background-color: #0080ff;
     -fx-text-fill:white;
-    -fx-border-radius: 20px;
+    -fx-border-radius: 15px;
     -fx-font-width: 2pt;
 }
 

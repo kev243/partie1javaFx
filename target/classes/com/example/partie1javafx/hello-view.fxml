@@ -7,9 +7,15 @@
 <?import javafx.scene.image.Image?>
 
 <?import javafx.scene.control.Button?>
+
+
+
+
+
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.partie1javafx.HelloController"
-      stylesheets="@style.css" >
+      stylesheets="@style.css" fx:id="fenetre1">
+
 
 
     <padding>
@@ -19,7 +25,7 @@
 
     <children>
         <Label id="titleLabel" text="Location des voitures"/>
-        <Label id="spamLabel" text="Offres Spéciales . Les tarifs aussi bas que possible. Essayez les !"></Label>
+        <Label id="spam" text="Offres Spéciales . Les tarifs aussi bas que possible. Essayez les !"/>
         <Label fx:id="welcomeText"/>
         <Button  fx:id="commencer" text="Commencer" onAction="#onHelloButtonClick"/>
     </children>
