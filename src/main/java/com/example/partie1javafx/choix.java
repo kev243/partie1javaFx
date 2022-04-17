@@ -21,7 +21,7 @@ public class choix implements Initializable {
     public void enregistrerButtonClick(ActionEvent event) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("enregistrer.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
         Stage stage =new Stage();
         stage.setTitle("Vroum!Vroum!");
         stage.setScene(scene);

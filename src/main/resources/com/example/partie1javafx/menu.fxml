@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1100.0">
+         <left>
+            <VBox prefHeight="659.0" prefWidth="197.0" style="-fx-background-color: #0035B9;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="54.0" prefWidth="199.0" style="-fx-background-color: #000;">
+                     <center>
+                        <Label text="Recherche avance" textFill="#f5f0f0" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <Label text="Recherche" textFill="#eeeaea">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <TextField style="-fx-background-color: #fff;">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Marque" textFill="#f8f6f6">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: #ffff;" value="Tout">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Fiat" />
+                           <String fx:value="Honda" />
+                           <String fx:value="Nissan" />
+                           <String fx:value="Mercedes" />
+                        </FXCollections>
+                     </items>
+                  </ChoiceBox>
+                  <Label text="Modele" textFill="#f8f8f8">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #fff;">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Label text="Annee" textFill="#fcf8f8">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="39.0" prefWidth="197.0">
+                     <children>
+                        <ChoiceBox prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #fff;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                        <ChoiceBox prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #fff;">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                  </HBox>
+                  <CheckBox mnemonicParsing="false" text="Vehicule certifie seulement" textFill="#f5f2f2">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" text="Vehicule de prestige" textFill="#fcf8f8">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" text="Vehicule en rabais" textFill="#fcf9f9">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </CheckBox>
+               </children></VBox>
+         </left>
+         <opaqueInsets>
+            <Insets left="10.0" top="10.0" />
+         </opaqueInsets>
+         <top>
+            <HBox prefHeight="124.0" prefWidth="1100.0" style="-fx-background-color: #0035B9;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/logo2.jpeg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="141.0" prefWidth="709.0">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label text="Auto usage et d'oaccasion a vendre" textFill="#f5f2f2">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label text="Le plus grand choix d’autos usagées à vendre dans le sud du Québec se trouve chez vroomvroom." textFill="#f8f8f8">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ChoiceBox prefHeight="32.0" prefWidth="184.0">
+                           <VBox.margin>
+                              <Insets top="16.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </ChoiceBox>
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: fff;" text="Connexion">
+                     <HBox.margin>
+                        <Insets left="15.0" top="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <center>
+            <VBox prefHeight="596.0" prefWidth="869.0" style="-fx-background-color: #E5E7E9;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="311.0" prefWidth="809.0" style="-fx-background-color: #E5E7E9;">
+                     <children>
+                        <VBox prefHeight="197.0" prefWidth="197.0" style="-fx-background-color: fff;">
+                           <children>
+                              <ImageView fitHeight="154.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label text="Jeep">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Wrangler JK Unlimited">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="23000$" textFill="#eb0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="311.0" prefWidth="189.0" style="-fx-background-color: fff;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label text="jeep">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Wrangler JK Unlimited">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="23000$" textFill="#eb0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="311.0" prefWidth="211.0" style="-fx-background-color: fff;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Label text="jeep">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Wrangler JK Unlimited">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="23000$" textFill="#eb0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="311.0" prefWidth="198.0" style="-fx-background-color: #000;">
+                           <HBox.margin>
+                              <Insets left="25.0" right="25.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="Nous" textFill="#f8f7f7">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="70.0" top="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Achetons  votre" textFill="#f2efef">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="32.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Auto" textFill="#f8f6f6">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="69.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="obtenez une" textFill="#f8f7f7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="51.0" top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Estimation gratuite" textFill="#fcfafa">
+                                 <VBox.margin>
+                                    <Insets left="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="de la valeur de votre" textFill="#f8f7f7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="vehecule d'echange" textFill="#f5f4f4">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: #0035B9;" text="Evaluer mon vehicule" textAlignment="CENTER" textFill="#f8f7f7">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="38.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="283.0" prefWidth="903.0">
+                     <children>
+                        <VBox prefHeight="283.0" prefWidth="220.0" style="-fx-background-color: #ffff;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="125.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="14.0" top="10.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Jeep">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Wrangler JK Unlimited">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="23000$" textFill="#eb0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="268.0" prefWidth="213.0" style="-fx-background-color: fff;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="128.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Jeep">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Wrangler JK Unlimited">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="23000$" textFill="#eb0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="268.0" prefWidth="212.0" style="-fx-background-color: fff;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="137.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Jeep">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Wrangler JK Unlimited">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="23000$" textFill="#eb0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="283.0" prefWidth="210.0" style="-fx-background-color: fff;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="166.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Jeep">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Wrangler JK Unlimited">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="23000$" textFill="#eb0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

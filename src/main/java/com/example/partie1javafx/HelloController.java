@@ -23,8 +23,8 @@ public class HelloController {
     //classe pour l'ouverture d'une nouvelle fenetre
     protected void onHelloButtonClick(ActionEvent event) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("choix.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 500);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
         Stage stage =new Stage();
         stage.setTitle("Vroum!Vroum!");
         stage.setScene(scene);

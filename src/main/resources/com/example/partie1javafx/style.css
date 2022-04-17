@@ -6,7 +6,42 @@
 
 .label{
     -fx-font-family: "Andale Mono";
+    -fx-text-fill:black;
+
 }
+
+.nom{
+    -fx-text-fill:#fff;
+}
+
+
+/*--------------------------menu-------------------------*/
+
+#LabelLogo{
+    -fx-font-size: 10px;
+    -fx-text-fill:black;
+}
+
+#LabelText1{
+    -fx-font-size: 20px;
+    -fx-text-fill:black;
+
+}
+
+#LabelLogo{
+    -fx-font-size: 10px;
+    -fx-text-fill:black;
+}
+
+#photo{
+
+    -fx-background-image: url("https://i.gaw.to/content/photos/38/76/387629_Bugatti.jpg");
+
+}
+
+/*--------------------------menu-------------------------*/
+
+
 
 /*
  * S'applique au grand titre de la page d'acceuill
@@ -32,18 +67,40 @@
 }
 
 /*
- * S'applique à tous les objets TextField et PasswordField
+ * S'applique à tous les titre des fenetre
  */
 .titre {
     -fx-font-size: 12pt;
     /* On utilise fill ici, car Text n'est pas un enfant, mais partie intégrante de l'objet */
-    -fx-fill: #9999cc;
+    -fx-fill: #000;
     -fx-font-family: "Andale Mono";
+
 }
 
-TextField, PasswordField {
-    -fx-background-color: #fff;
-    -fx-text-fill: #aaaacc;
+
+/*
+ *  #aaaacc----------------------------------------fenetre deux -----------------------------------------------------
+ */
+
+#fenetre2{
+    -fx-background-image: url("https://cdn-s-www.lalsace.fr/images/7AFB202D-8CD6-49A0-B96C-7C99235D482A/NW_raw/la-voiture-noire-de-bugatti-est-consideree-comme-le-plus-beau-modele-jamais-dessine-par-jean-bugatti-dr-1639828848.jpg");
+    -fx-background-size:cover;
+}
+
+#fenetre30 {
+    -fx-background-color: white;
+    -fx-background-size: cover;
+    -fx-border-radius: 5;
+}
+
+
+
+
+
+
+TextField, PasswordField{
+    -fx-background-color: #EBEDEF;
+    -fx-text-fill: #000;
     -fx-font-size: 10pt;
     -fx-font-width: 2pt;
     -fx-font-family: "Andale Mono";
@@ -61,4 +118,17 @@ TextField, PasswordField {
     -fx-text-fill:white;
     -fx-font-size: 10pt;
     -fx-font-family: "Andale Mono";
+}
+
+.label{
+    -fx-text-fill:white;
+}
+
+/*
+ * ----------------------------------------fenetre 3 -----------------------------------------------------
+ */
+
+#fenetre3{
+    -fx-background-image: url("https://cdn-s-www.lalsace.fr/images/7AFB202D-8CD6-49A0-B96C-7C99235D482A/NW_raw/la-voiture-noire-de-bugatti-est-consideree-comme-le-plus-beau-modele-jamais-dessine-par-jean-bugatti-dr-1639828848.jpg");
+    -fx-background-size:cover;
 }
