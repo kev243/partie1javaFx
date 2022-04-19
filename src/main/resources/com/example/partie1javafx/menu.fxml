@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.partie1javafx.Menu">
    <children>
       <BorderPane prefHeight="720.0" prefWidth="1100.0">
          <left>
@@ -42,7 +42,7 @@
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <ChoiceBox prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: #ffff;" value="Tout">
+                  <ChoiceBox  prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: #ffff;" value="Tout">
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
@@ -60,12 +60,12 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <ChoiceBox prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #fff;">
+                  <ChoiceBox value="Tout " prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #fff;">
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" />
                      </VBox.margin>
                   </ChoiceBox>
-                  <Label text="Annee" textFill="#fcf8f8">
+                  <Label text="Année" textFill="#fcf8f8">
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
@@ -75,12 +75,12 @@
                   </Label>
                   <HBox prefHeight="39.0" prefWidth="197.0">
                      <children>
-                        <ChoiceBox prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #fff;">
+                        <ChoiceBox value="À partir de " prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #fff;">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
                         </ChoiceBox>
-                        <ChoiceBox prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #fff;">
+                        <ChoiceBox  value="Jusqu'a " prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #fff;">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
@@ -139,7 +139,7 @@
                               <Insets top="5.0" />
                            </VBox.margin>
                         </Label>
-                        <ChoiceBox prefHeight="32.0" prefWidth="184.0">
+                        <ChoiceBox value="Trier par" style="-fx-background-color: #fff" prefHeight="32.0" prefWidth="184.0">
                            <VBox.margin>
                               <Insets top="16.0" />
                            </VBox.margin>
@@ -149,7 +149,7 @@
                         </ChoiceBox>
                      </children>
                   </VBox>
-                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: fff;" text="Connexion">
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0" onAction="#onConnexion"  style="-fx-background-color: fff;" text="Connexion">
                      <HBox.margin>
                         <Insets left="15.0" top="30.0" />
                      </HBox.margin>
@@ -196,7 +196,7 @@
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                              <Button onAction="#onAchat" mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
@@ -352,7 +352,7 @@
                                     <Insets left="30.0" />
                                  </VBox.margin>
                               </Label>
-                              <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: #0035B9;" text="Evaluer mon vehicule" textAlignment="CENTER" textFill="#f8f7f7">
+                              <Button onAction="#onEvaluer" mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: #0035B9;" text="Evaluer mon vehicule" textAlignment="CENTER" textFill="#f8f7f7">
                                  <VBox.margin>
                                     <Insets left="15.0" top="38.0" />
                                  </VBox.margin>
