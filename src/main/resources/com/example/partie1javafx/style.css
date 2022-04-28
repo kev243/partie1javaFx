@@ -1,6 +1,6 @@
 
 #fenetre1{
-    -fx-background-image: url("https://i.gaw.to/content/photos/38/76/387629_Bugatti.jpg");
+    -fx-background-image: url("https://www.automobile-propre.com/wp-content/uploads/2021/04/Jeep-Compass-4xe-2021-01.jpg");
     -fx-background-size:cover;
 }
 
@@ -47,7 +47,7 @@
  * S'applique au grand titre de la page d'acceuill
  */
 #titleLabel{
-    -fx-font-size: 20px;
+    -fx-font-size: 30px;
     -fx-text-fill:white;
 }
 #spam{

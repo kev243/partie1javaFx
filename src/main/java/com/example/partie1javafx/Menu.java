@@ -17,11 +17,13 @@ public class Menu {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("choix.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
         Stage stage =new Stage();
-        stage.setTitle("Vroum!Vroum!");
+        stage.setTitle("Vroom!Vroom!");
         stage.setScene(scene);
         ////Le code suivant montre comment utiliser Java Modality.NONE
         stage.initModality(Modality.NONE);//default
         stage.show();
+        stage.setResizable(false);
+
 
 
     }

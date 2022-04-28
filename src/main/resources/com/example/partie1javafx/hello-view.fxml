@@ -24,7 +24,7 @@
 
 
     <children>
-        <Label id="titleLabel" text="Location des voitures"/>
+        <Label id="titleLabel" text="Vente des voitures"/>
         <Label id="spam" text="Offres Spéciales . Les tarifs aussi bas que possible. Essayez les !"/>
         <Label fx:id="welcomeText"/>
         <Button  fx:id="commencer" text="Commencer" onAction="#onHelloButtonClick"/>

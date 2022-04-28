@@ -2,6 +2,7 @@ package com.example.partie1javafx;
 
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
@@ -23,10 +24,26 @@ public class choix implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("enregistrer.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
         Stage stage =new Stage();
-        stage.setTitle("Vroum!Vroum!");
+        stage.setTitle("Vroom!Vroom!");
         stage.setScene(scene);
         ////Le code suivant montre comment utiliser Java Modality.NONE
         stage.initModality(Modality.NONE);//default
         stage.show();
+    }
+
+    @FXML
+    protected void onHome (ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
+        Stage stage =new Stage();
+        stage.setTitle("Vroom!Vroom!");
+        stage.setScene(scene);
+        ////Le code suivant montre comment utiliser Java Modality.NONE
+        stage.initModality(Modality.NONE);//default
+        stage.show();
+        stage.setResizable(false);
+
+
     }
 }

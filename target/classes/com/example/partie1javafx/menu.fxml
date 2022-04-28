@@ -24,7 +24,7 @@
                <children>
                   <BorderPane prefHeight="54.0" prefWidth="199.0" style="-fx-background-color: #000;">
                      <center>
-                        <Label text="Recherche avance" textFill="#f5f0f0" BorderPane.alignment="CENTER" />
+                        <Label text="Recherche avancée" textFill="#f5f0f0" BorderPane.alignment="CENTER" />
                      </center>
                   </BorderPane>
                   <Label text="Recherche" textFill="#eeeaea">
@@ -64,6 +64,7 @@
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" />
                      </VBox.margin>
+
                   </ChoiceBox>
                   <Label text="Année" textFill="#fcf8f8">
                      <VBox.margin>
@@ -79,11 +80,27 @@
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="2022" />
+                                 <String fx:value="2021" />
+                                 <String fx:value="2020" />
+                                 <String fx:value="2019" />
+                              </FXCollections>
+                           </items>
                         </ChoiceBox>
                         <ChoiceBox  value="Jusqu'a " prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #fff;">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="2022" />
+                                 <String fx:value="2021" />
+                                 <String fx:value="2020" />
+                                 <String fx:value="2019" />
+                              </FXCollections>
+                           </items>
                         </ChoiceBox>
                      </children>
                   </HBox>
@@ -107,6 +124,8 @@
          <opaqueInsets>
             <Insets left="10.0" top="10.0" />
          </opaqueInsets>
+
+         <!---la partie haute-->
          <top>
             <HBox prefHeight="124.0" prefWidth="1100.0" style="-fx-background-color: #0035B9;" BorderPane.alignment="CENTER">
                <children>
@@ -123,7 +142,7 @@
                         <Insets left="45.0" />
                      </HBox.margin>
                      <children>
-                        <Label text="Auto usage et d'oaccasion a vendre" textFill="#f5f2f2">
+                        <Label text="Auto usage et d'occasion a vendre" textFill="#f5f2f2">
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
@@ -146,6 +165,14 @@
                            <padding>
                               <Insets top="5.0" />
                            </padding>
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Les plus pertinents" />
+                                 <String fx:value="Nouveaux arrivages" />
+                                 <String fx:value="Plus bas kilométrage" />
+                                 <String fx:value="Le moins cher en premier" />
+                              </FXCollections>
+                           </items>
                         </ChoiceBox>
                      </children>
                   </VBox>
@@ -169,7 +196,7 @@
                            <children>
                               <ImageView fitHeight="154.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                    <Image url="@../../../img/jeep.jpeg" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -210,13 +237,13 @@
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                    <Image url="@../../../img/Micra.jpeg" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </ImageView>
-                              <Label text="jeep">
+                              <Label text="Nissan">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
@@ -254,13 +281,13 @@
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                    <Image url="@../../../img/toyota.jpeg" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </ImageView>
-                              <Label text="jeep">
+                              <Label text="Toyota">
                                  <font>
                                     <Font size="17.0" />
                                  </font>
@@ -373,10 +400,10 @@
                                     <Insets bottom="10.0" left="14.0" top="10.0" />
                                  </VBox.margin>
                                  <image>
-                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                    <Image url="@../../../img/ford.jpeg" />
                                  </image>
                               </ImageView>
-                              <Label text="Jeep">
+                              <Label text="Ford">
                                  <font>
                                     <Font size="17.0" />
                                  </font>
@@ -414,10 +441,10 @@
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                                  <image>
-                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                    <Image url="@../../../img/kia.jpeg" />
                                  </image>
                               </ImageView>
-                              <Label text="Jeep">
+                              <Label text="Kia">
                                  <font>
                                     <Font size="17.0" />
                                  </font>
@@ -455,10 +482,10 @@
                                     <Insets left="10.0" right="10.0" top="10.0" />
                                  </VBox.margin>
                                  <image>
-                                    <Image url="@../../../img/imageAccueil.jpeg" />
+                                    <Image url="@../../../img/lexus.jpeg" />
                                  </image>
                               </ImageView>
-                              <Label text="Jeep">
+                              <Label text="Lexus">
                                  <font>
                                     <Font size="17.0" />
                                  </font>

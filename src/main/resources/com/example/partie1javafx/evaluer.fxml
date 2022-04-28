@@ -14,6 +14,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.partie1javafx.Evaluer">
    <children>
    
@@ -83,12 +85,12 @@
                         </Label>
                         <HBox prefHeight="52.0" prefWidth="368.0">
                            <children>
-                              <TextField promptText="prenom, Nom">
+                              <TextField promptText="prénom, Nom">
                                  <HBox.margin>
                                     <Insets left="10.0" right="30.0" top="10.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField promptText="telephone">
+                              <TextField promptText="téléphone">
                                  <HBox.margin>
                                     <Insets top="10.0" />
                                  </HBox.margin>
@@ -111,17 +113,17 @@
                         </HBox>
                         <HBox prefHeight="43.0" prefWidth="368.0">
                            <children>
-                              <TextField prefHeight="27.0" prefWidth="101.0" promptText="Modele">
+                              <TextField prefHeight="27.0" prefWidth="101.0" promptText="Modèle">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField prefHeight="27.0" prefWidth="101.0" promptText="Annee">
+                              <TextField prefHeight="27.0" prefWidth="101.0" promptText="Année">
                                  <HBox.margin>
                                     <Insets left="20.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField prefHeight="27.0" prefWidth="105.0" promptText="Kilometrage">
+                              <TextField prefHeight="27.0" prefWidth="105.0" promptText="Kilométrage">
                                  <HBox.margin>
                                     <Insets left="20.0" />
                                  </HBox.margin>
@@ -139,6 +141,13 @@
                            <VBox.margin>
                               <Insets left="10.0" top="10.0" />
                            </VBox.margin>
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Excellent" />
+                                 <String fx:value="Moyenne" />
+                                 <String fx:value="Médiocre" />
+                              </FXCollections>
+                           </items>
                         </ChoiceBox>
                         <Label text="Choisir un concessionnaire" textFill="#f2f2f2">
                            <VBox.margin>
@@ -152,6 +161,13 @@
                            <VBox.margin>
                               <Insets left="10.0" top="10.0" />
                            </VBox.margin>
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Nissan Victoria" />
+                                 <String fx:value="Kia quebec" />
+                                 <String fx:value="Chevrolet ottawa" />
+                              </FXCollections>
+                           </items>
                         </ChoiceBox>
                         <CheckBox mnemonicParsing="false" text="Recevez nos nouvelles et promotions" textFill="#f8f8f8">
                            <VBox.margin>
