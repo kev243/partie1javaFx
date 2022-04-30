@@ -42,7 +42,7 @@
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <ChoiceBox  prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: #ffff;" value="Tout">
+                  <ChoiceBox prefHeight="27.0" prefWidth="178.0" style="-fx-background-color: #ffff;" value="Tout">
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
@@ -60,7 +60,7 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <ChoiceBox value="Tout " prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #fff;">
+                  <ChoiceBox prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #fff;" value="Tout ">
                      <VBox.margin>
                         <Insets left="10.0" right="10.0" />
                      </VBox.margin>
@@ -76,7 +76,7 @@
                   </Label>
                   <HBox prefHeight="39.0" prefWidth="197.0">
                      <children>
-                        <ChoiceBox value="À partir de " prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #fff;">
+                        <ChoiceBox prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #fff;" value="À partir de ">
                            <HBox.margin>
                               <Insets left="10.0" />
                            </HBox.margin>
@@ -89,7 +89,7 @@
                               </FXCollections>
                            </items>
                         </ChoiceBox>
-                        <ChoiceBox  value="Jusqu'a " prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #fff;">
+                        <ChoiceBox prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #fff;" value="Jusqu'a ">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
@@ -119,6 +119,11 @@
                         <Insets bottom="10.0" left="10.0" top="10.0" />
                      </padding>
                   </CheckBox>
+                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="175.0" style="-fx-background-color: #568203;" text="Appliquer" textFill="#f5f4f4">
+                     <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
                </children></VBox>
          </left>
          <opaqueInsets>
@@ -129,12 +134,12 @@
          <top>
             <HBox prefHeight="124.0" prefWidth="1100.0" style="-fx-background-color: #0035B9;" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="84.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="111.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../img/logo2.jpeg" />
                      </image>
                      <HBox.margin>
-                        <Insets left="40.0" top="20.0" />
+                        <Insets left="5.0" top="20.0" />
                      </HBox.margin>
                   </ImageView>
                   <VBox prefHeight="141.0" prefWidth="709.0">
@@ -158,7 +163,7 @@
                               <Insets top="5.0" />
                            </VBox.margin>
                         </Label>
-                        <ChoiceBox value="Trier par" style="-fx-background-color: #fff" prefHeight="32.0" prefWidth="184.0">
+                        <ChoiceBox prefHeight="32.0" prefWidth="184.0" style="-fx-background-color: #fff" value="Trier par">
                            <VBox.margin>
                               <Insets top="16.0" />
                            </VBox.margin>
@@ -176,7 +181,7 @@
                         </ChoiceBox>
                      </children>
                   </VBox>
-                  <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="145.0" onAction="#onConnexion"  style="-fx-background-color: fff;" text="Connexion">
+                  <Button mnemonicParsing="false" onAction="#onConnexion" prefHeight="32.0" prefWidth="145.0" style="-fx-background-color: fff;" text="Connexion">
                      <HBox.margin>
                         <Insets left="15.0" top="30.0" />
                      </HBox.margin>
@@ -223,7 +228,7 @@
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
                               </Label>
-                              <Button onAction="#onAchat" mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Acheter">
+                              <Button mnemonicParsing="false" onAction="#onAchat" prefHeight="27.0" prefWidth="101.0" text="Acheter">
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
                                  </VBox.margin>
@@ -379,7 +384,7 @@
                                     <Insets left="30.0" />
                                  </VBox.margin>
                               </Label>
-                              <Button onAction="#onEvaluer" mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: #0035B9;" text="Evaluer mon vehicule" textAlignment="CENTER" textFill="#f8f7f7">
+                              <Button mnemonicParsing="false" onAction="#onEvaluer" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: #0035B9;" text="Evaluer mon vehicule" textAlignment="CENTER" textFill="#f8f7f7">
                                  <VBox.margin>
                                     <Insets left="15.0" top="38.0" />
                                  </VBox.margin>

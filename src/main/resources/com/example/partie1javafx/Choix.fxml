@@ -11,6 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 <VBox fx:id="fenetre2" alignment="CENTER" spacing="20.0" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.example.partie1javafx.choix">
+
 <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
 </padding>
@@ -21,9 +22,7 @@
    </Button>
 
 <VBox fx:id="fenetre30" alignment="CENTER" prefHeight="300.0">
-    <!--<padding>
-        <Insets bottom="20.0" left="100.0" right="100.0" top="20.0"/>
-    </padding>-->
+
 
     <VBox.margin>
         <Insets left="300.0" right="300.0" />

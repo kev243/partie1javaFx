@@ -39,7 +39,6 @@ public class choix implements Initializable {
         Stage stage =new Stage();
         stage.setTitle("Vroom!Vroom!");
         stage.setScene(scene);
-        ////Le code suivant montre comment utiliser Java Modality.NONE
         stage.initModality(Modality.NONE);//default
         stage.show();
         stage.setResizable(false);
